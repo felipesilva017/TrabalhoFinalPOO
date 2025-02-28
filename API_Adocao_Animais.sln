@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35506.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Application", "1 - Application", "{B3B76169-BD2F-4A83-ACBB-58D05601FA99}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Domain", "2 - Domain", "{F338DBCB-EF78-44C0-B505-A568F019D05C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Service", "3 - Service", "{F06D657B-228F-479F-9076-9EDB81BDDC64}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infrastructure", "4 - Infrastructure", "{2AFCCA57-7CE8-4627-A44A-4A3A840AEB13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API_Adocao_Animais.Domain", "API_Adocao_Animais.Domain\API_Adocao_Animais.Domain.csproj", "{D78731A9-CEA4-43D2-A560-7F8B873BB674}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API_Adocao_Animais.Service", "API_Adocao_Animais.Service\API_Adocao_Animais.Service.csproj", "{C0A4F816-D13D-4222-9758-122420FAA862}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API_Adocao_Animais_Infrastructure", "API_Adocao_Animais_Infrastructure\API_Adocao_Animais_Infrastructure.csproj", "{E5317E0A-6D3C-4277-A47E-A2860647D959}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API_Adocao_Animais.Application", "API_Adocao_Animais.Application\API_Adocao_Animais.Application.csproj", "{13AA5687-150F-4325-AA1E-DABF8F91C186}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D78731A9-CEA4-43D2-A560-7F8B873BB674}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D78731A9-CEA4-43D2-A560-7F8B873BB674}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D78731A9-CEA4-43D2-A560-7F8B873BB674}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D78731A9-CEA4-43D2-A560-7F8B873BB674}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0A4F816-D13D-4222-9758-122420FAA862}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0A4F816-D13D-4222-9758-122420FAA862}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0A4F816-D13D-4222-9758-122420FAA862}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0A4F816-D13D-4222-9758-122420FAA862}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5317E0A-6D3C-4277-A47E-A2860647D959}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5317E0A-6D3C-4277-A47E-A2860647D959}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5317E0A-6D3C-4277-A47E-A2860647D959}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5317E0A-6D3C-4277-A47E-A2860647D959}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13AA5687-150F-4325-AA1E-DABF8F91C186}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13AA5687-150F-4325-AA1E-DABF8F91C186}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13AA5687-150F-4325-AA1E-DABF8F91C186}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13AA5687-150F-4325-AA1E-DABF8F91C186}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D78731A9-CEA4-43D2-A560-7F8B873BB674} = {F338DBCB-EF78-44C0-B505-A568F019D05C}
+		{C0A4F816-D13D-4222-9758-122420FAA862} = {F06D657B-228F-479F-9076-9EDB81BDDC64}
+		{E5317E0A-6D3C-4277-A47E-A2860647D959} = {2AFCCA57-7CE8-4627-A44A-4A3A840AEB13}
+		{13AA5687-150F-4325-AA1E-DABF8F91C186} = {B3B76169-BD2F-4A83-ACBB-58D05601FA99}
+	EndGlobalSection
+EndGlobal
