@@ -1,13 +1,14 @@
 ﻿using System.Collections.Generic;
 using API_Adocao_Animais.Domain.Entities;
+using API_Adocao_Animais.Domain.Interfaces;
 
 namespace API_Adocao_Animais.Infrastructure.Repositories
 {
-    public class AnimalRepository
+    public class AdocaoRepository : IAdocaoRepository
     {
         private readonly List<Animal> _animais;
 
-        public AnimalRepository()
+        public AdocaoRepository()
         {
             _animais = new List<Animal>
             {

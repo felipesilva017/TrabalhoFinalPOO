@@ -13,6 +13,7 @@
   <ItemGroup>
     <ProjectReference Include="..\API_Adocao_Animais.Domain\API_Adocao_Animais.Domain.csproj" />
     <ProjectReference Include="..\API_Adocao_Animais.Service\API_Adocao_Animais.Service.csproj" />
+    <ProjectReference Include="..\API_Adocao_Animais_Infrastructure\API_Adocao_Animais_Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

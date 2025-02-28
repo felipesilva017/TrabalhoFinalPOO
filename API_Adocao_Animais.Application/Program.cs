@@ -1,10 +1,12 @@
 using API_Adocao_Animais.Domain.Interfaces;
 using API_Adocao_Animais.Application.Services;
+using API_Adocao_Animais.Infrastructure.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Configuração dos serviços
 builder.Services.AddScoped<IAdocaoService, AdocaoService>();
+builder.Services.AddScoped<IAdocaoRepository, AdocaoRepository>();
 
 builder.Services.AddControllers();
 
