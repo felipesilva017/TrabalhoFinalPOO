@@ -7,7 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="7.0.20" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\API_Adocao_Animais.Domain\API_Adocao_Animais.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Data\" />
   </ItemGroup>
 
 </Project>

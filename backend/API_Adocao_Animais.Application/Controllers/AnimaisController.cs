@@ -24,11 +24,35 @@ namespace API_Adocao_Animais.Application.Controllers
         }
 
         [HttpPost("AdicionarAnimal")]
-        public IActionResult AdicionarAnimal([FromBody] Animal animal)
+        public IActionResult AdicionarAnimal([FromBody] AnimalDTO animal)
         {
-            _adocaoService.AdicionarAnimal(animal);
+            Animal ani;
+
+            if (animal.Especie == "Cachorro")
+            {
+                ani = new Cachorro
+                {
+                    Nome = animal.Nome,
+                    Idade = animal.Idade
+                };
+            }
+            else if (animal.Especie == "Gato")
+            {
+                ani = new Gato
+                {
+                    Nome = animal.Nome,
+                    Idade = animal.Idade
+                };
+            }
+            else
+            {
+                return BadRequest("Espécie de animal desconhecida.");
+            }
+
+            _adocaoService.AdicionarAnimal(ani);
             return Ok();
         }
+
         [HttpPost("AdotarAnimal")]
         public IActionResult AdotarAnimal([FromBody] AdotanteAdocaoRequest request)
         {
