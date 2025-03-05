@@ -1,51 +1,65 @@
-# API de Adoção de Animais
+ï»¿# ðŸš€ Configurando o Backend - API AdoCAO - AdoÃ§Ã£o de Animais
 
-Este projeto é uma API para gerenciar a adoção de animais. Ele utiliza .NET 6, Entity Framework Core com um banco de dados em memória e Swagger para documentação da API.
+Este projeto Ã© uma API para gerenciar a adoÃ§Ã£o de animais. Ele utiliza .NET 6, Entity Framework Core com um banco de dados em memÃ³ria e Swagger para documentaÃ§Ã£o da API.
 
-## Pré-requisitos
+## ðŸ“Œ Requisitos
 
 - [.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet/6.0)
 - [Visual Studio 2022](https://visualstudio.microsoft.com/vs/)
 
-## Configuração do Projeto
+## ðŸ› ï¸ ConfiguraÃ§Ã£o do Projeto
 
-1. **Clone o repositório:**
+1. **Clone o repositÃ³rio:**
 
-2. **Abra a solução no Visual Studio 2022:**
+2. **Abra a soluÃ§Ã£o no Visual Studio 2022:**
 
    Abra o arquivo `API_Adocao_Animais.sln` no Visual Studio 2022.
 
 3. **Restaurar pacotes NuGet:**
 
-   No Visual Studio, vá para o Gerenciador de Soluções, clique com o botão direito na solução e selecione `Restaurar Pacotes NuGet`.
+   No Visual Studio, vÃ¡ para o Gerenciador de SoluÃ§Ãµes, clique com o botÃ£o direito na soluÃ§Ã£o e selecione `Restaurar Pacotes NuGet`.
 
-4. **Compilar a solução:**
+4. **Compilar a soluÃ§Ã£o:**
 
-   No Visual Studio, vá para `Compilar` > `Compilar Solução` ou pressione `Ctrl+Shift+B`.
+   No Visual Studio, vÃ¡ para `Compilar` > `Compilar SoluÃ§Ã£o` ou pressione `Ctrl+Shift+B`.
 
-5. **Executar a aplicação:**
+5. **Executar a aplicaÃ§Ã£o:**
 
-   No Visual Studio, defina o projeto `API_Adocao_Animais.Application` como projeto de inicialização. Em seguida, pressione `F5` para iniciar a aplicação.
+   No Visual Studio, defina o projeto `API_Adocao_Animais.Application` como projeto de inicializaÃ§Ã£o. Em seguida, pressione `F5` para iniciar a aplicaÃ§Ã£o.
 
-## Estrutura do Projeto
+## ðŸ“‚ Estrutura do Projeto
 
-- **API_Adocao_Animais.Application**: Contém a API e a configuração do pipeline de requisição.
-- **API_Adocao_Animais.Domain**: Contém as entidades e interfaces do domínio.
-- **API_Adocao_Animais.Service**: Contém os serviços de aplicação.
-- **API_Adocao_Animais_Infrastructure**: Contém a configuração do Entity Framework Core e o contexto do banco de dados.
+- **API_Adocao_Animais.Application**: ContÃ©m a API e a configuraÃ§Ã£o do pipeline de requisiÃ§Ã£o.
+- **API_Adocao_Animais.Domain**: ContÃ©m as entidades e interfaces do domÃ­nio.
+- **API_Adocao_Animais.Service**: ContÃ©m os serviÃ§os de aplicaÃ§Ã£o.
+- **API_Adocao_Animais_Infrastructure**: ContÃ©m a configuraÃ§Ã£o do Entity Framework Core e o contexto do banco de dados.
 
-## Endpoints da API
+## ðŸš€ Endpoints Principais
 
-Após iniciar a aplicação, você pode acessar a documentação da API gerada pelo Swagger em `http://localhost:5000/swagger`.
+### ðŸ“Œ Animais
+- `GET /api/animais` - Lista todos os animais
+- `POST /api/animais` - Adiciona um novo animal
+- `DELETE /api/animais/{id}` - Remove um animal
+
+### ðŸ“Œ Adotantes
+- `GET /api/adotantes` - Lista todos os adotantes
+- `POST /api/adotantes` - Registra um novo adotante
+
+## ðŸ›  Tecnologias Utilizadas
+- .NET 6
+- ASP.NET Core Web API
+- Entity Framework Core (InMemory Database)
+- Swagger para documentaÃ§Ã£o
+
 
 ## Dados Iniciais
 
-A aplicação inicializa com alguns dados iniciais para facilitar o teste:
+A aplicaÃ§Ã£o inicializa com alguns dados iniciais para facilitar o teste:
 
 - **Abrigo**:
   - Id: 1
   - Nome: "Abrigo Central"
-  - Endereço: "Rua Principal, 123"
+  - EndereÃ§o: "Rua Principal, 123"
 
 - **Animais**:
   - Cachorro:
@@ -59,17 +73,17 @@ A aplicação inicializa com alguns dados iniciais para facilitar o teste:
     - Idade: 2
     - AbrigoId: 1
 
-## Contribuição
+## ContribuiÃ§Ã£o
 
-Se você deseja contribuir com este projeto, por favor, siga os passos abaixo:
+Se vocÃª deseja contribuir com este projeto, por favor, siga os passos abaixo:
 
-1. Faça um fork do repositório.
+1. FaÃ§a um fork do repositÃ³rio.
 2. Crie uma branch para sua feature (`git checkout -b feature/nova-feature`).
-3. Commit suas mudanças (`git commit -am 'Adiciona nova feature'`).
-4. Faça o push para a branch (`git push origin feature/nova-feature`).
+3. Commit suas mudanÃ§as (`git commit -am 'Adiciona nova feature'`).
+4. FaÃ§a o push para a branch (`git push origin feature/nova-feature`).
 5. Crie um novo Pull Request.
 
-## Licença
+## LicenÃ§a
 
-Este projeto está licenciado sob a [MIT License](LICENSE).
+Este projeto estÃ¡ licenciado sob a [MIT License](LICENSE).
 
