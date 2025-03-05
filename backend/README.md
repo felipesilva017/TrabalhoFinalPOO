@@ -1,3 +1,15 @@
+# API de Adoção de Animais
+
+Este projeto é uma API para gerenciar a adoção de animais. Ele utiliza .NET 6, Entity Framework Core com um banco de dados em memória e Swagger para documentação da API.
+
+## Pré-requisitos
+
+- [.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet/6.0)
+- [Visual Studio 2022](https://visualstudio.microsoft.com/vs/)
+
+## Configuração do Projeto
+
+1. **Clone o repositório:**
 
 2. **Abra a solução no Visual Studio 2022:**
 
