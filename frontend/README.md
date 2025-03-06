@@ -19,7 +19,7 @@ Antes de começar, verifique se você tem instalado:
 
 - **Node.js** (versão 16 ou superior) → [Baixar Node.js](https://nodejs.org/)
 - **Gerenciador de pacotes** (npm, yarn ou pnpm)
-- **Backend da API rodando** (`http://localhost:7259/api/animais`)
+- **Backend da API rodando** (`https://localhost:7259/swagger/index.html`)
 
 ---
 
@@ -28,7 +28,7 @@ Antes de começar, verifique se você tem instalado:
 1. **Clone o repositório:**
 
    ```sh
-   git clone https://github.com/seu-usuario/seu-repositorio.git
+   git clone https://github.com/felipesilva017/TrabalhoFinalPOO.git
    cd frontend
    ```
 
@@ -69,7 +69,7 @@ O Tailwind já está configurado no projeto. Caso precise modificar estilos, edi
 ## 🐞 **Possíveis Erros e Soluções**
 
 1⃣ **Erro:** `FetchError: Failed to connect to backend`  
- 👉 **Solução:** Verifique se a API está rodando corretamente (`http://localhost:5000`).
+ 👉 **Solução:** Verifique se a API está rodando corretamente (`https://localhost:7259/swagger/index.html`).
 
 ---
 
