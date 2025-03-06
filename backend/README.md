@@ -1,4 +1,4 @@
-﻿# 🚀 Configurando o Backend - API AdoCAO - Adoção de Animais
+﻿# 🚀 Configurando o Backend - API AdoCÃO - Adoção de Animais
 
 Este projeto é uma API para gerenciar a adoção de animais. Ele utiliza .NET 6, Entity Framework Core com um banco de dados em memória e Swagger para documentação da API.
 
